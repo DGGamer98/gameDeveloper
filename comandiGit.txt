@@ -1,0 +1,55 @@
+Configurare Git sui computer:
+
+Assicurati di avere Git installato sui tuoi computer.
+
+Apri un terminale o prompt dei comandi e configura il tuo nome utente e la tua email con il seguente comando:
+
+git config --global user.name "IlTuoNome"
+
+git config --global user.email "tua@email.com"
+####################################################################################################################
+
+Clonare il repository:
+
+Sul tuo primo computer, esegui il seguente comando nella cartella in cui desideri salvare il progetto:
+
+git clone <URL-del-tuo-repository>
+####################################################################################################################
+
+Creare un nuovo branch:
+
+Entra nella cartella del progetto con il comando:
+cd nome-del-tuo-progetto
+
+Crea un nuovo branch per lavorare sulle nuove funzionalità:
+git checkout -b nome-del-tuo-branch
+
+####################################################################################################################
+
+Sviluppare il codice:
+
+Aggiungi, modifica o elimina i file nel tuo progetto.
+
+Commit e push:
+
+Quando sei pronto per salvare le tue modifiche, esegui i seguenti comandi:
+
+git add .
+
+git commit -m "Descrizione del tuo commit"
+
+git push origin nome-del-tuo-branch
+
+####################################################################################################################
+
+Pull sul secondo computer:
+
+Sul tuo secondo computer, naviga nella cartella del progetto e assicurati di essere sullo stesso branch:
+
+git checkout nome-del-tuo-branch
+
+Poi esegui il comando per ottenere le ultime modifiche dal repository remoto:
+
+git pull origin nome-del-tuo-branch
+
+Ripeti i passaggi 5-8 per continuare a lavorare su entrambi i computer.
